@@ -37,19 +37,19 @@ Create the folder tree and move the "data" folder.
 │    │   └── eICh24_2_2.fq.gz
 │    ├── results/
 │    │   └── fastqc/
-│    │   │    ├── fastqc_one
-│    │   │    └── fastqc_final
+│    │   │    ├── fastqc_one/
+│    │   │    └── fastqc_final/
 │    │   └── trimmomatic/
-│    │   │    ├── paired
-│    │   │    └── unpaired
+│    │   │    ├── paired/
+│    │   │    └── unpaired/
 │    │   └── trimgalore/
 │    │   └── bowtie2/
-│    │   │    ├── index
-│    │   │    ├── paired
-│    │   │    └── unpaired
+│    │   │    ├── index/
+│    │   │    ├── paired/
+│    │   │    └── unpaired/
 │    │   └── prinseq/
-│    │   │    ├── filtered
-│    │   │    └── discarded
+│    │   │    ├── filtered/
+│    │   │    └── discarded/
 
 ```
 
