@@ -112,7 +112,7 @@ for i in {1..48}; do
   line=$(printf "eICh24_%d" "$i")
   
   blastn \
-    -num_threads 11 \
+    -num_threads 10 \
     -perc_identity 95 \
     -evalue 10 \
     -outfmt '6 qseqid sseqid stitle pident evalue staxids' \
