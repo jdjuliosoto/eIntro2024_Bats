@@ -16,7 +16,6 @@ When prompted, select "Yes" to add Anaconda to the PATH automatically.
 ## Step 2: Install and activate bioinformatic tools
 Once Conda is installed, create the environment with the bioinformatic tools, Conda chanels priority, and dependencies for the raw reads analyses. 
 Use the bioinfo-tools.yml file.
-
 ```bash
 conda env create -f bioinfo-tools.yml
 
