@@ -1,9 +1,25 @@
 # Installation Instructions
 
-For this analyses we used 2 TB of memmory SSD, 64 GB DDR4, and an Intel(R) Core(TM) i9-10900F CPU @ 2.80GHz with 10 cores processor.  
+## **Hardware and Software Setup**
+All analyses were performed using a workstation equipped with:
+
+* Processor : Intel(R) Core(TM) i9-10900F CPU @ 2.80GHz (10 cores, 20 threads) 
+* Main Drive (OS + apps):  
+    - Type: NVMe SSD  
+    - Capacity: 238.5 GB  
+    - Model: Western Digital PC SN730 NVMe WDC 256GB
+* Primary Data Storage:  
+    - Type: HDD  
+    - Capacity: 1.8 TB  
+    - Model: Seagate ST2000DM008-2FR1  
+* RAM: 64 GB DDR4 (4 x 16 GB Kingston KHX2666C16D4/16GX DIMMs)
+    - Speed: 2667 MT/s (configured at 2400 MT/s)
+    - Type: Synchronous DDR4, Volatile memory
+
+The operating system used was Ubuntu 24.04.2 LTS , the latest Long-Term Support (LTS) release at the time of analysis.
+For most bioinformatic tools, we used Anaconda3 v2024-10-1 as the main environment manager.
 
 ## Step 1: Prepare the setup
-All the analysis were done in the latest LTS version of Ubuntu "Ubuntu 24.04.2 LTS". For the majority of bioinformatic tools we used Anaconda3 v2024-10-1.
 
 Download and install Anaconda:
 ```bash
