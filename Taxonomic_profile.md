@@ -71,7 +71,7 @@ for i in {1..48}; do
     -2 /home/user/proyect/results/bowtie2/unpaired/"$line"_unmapped_2.fastq.gz \
     --report-file /home/user/proyect/results/centrifuge/report/report_"$line"_bacteria.txt \
     -S results_"$line"_bacteria.txt \
-    --threads 11
+    --threads 10
 done
 ```
 
