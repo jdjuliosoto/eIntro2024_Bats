@@ -30,9 +30,12 @@ Create the folder tree and move the "data" folder.
 │    ├── bioinfo-tools.yml
 │    ├── checksums.md5
 │    ├── adapters/
+│    ├── scripts/
+│    │   ├── script.py
+│    │   └── script2.py
 │    ├── data/
 │    │   ├── eICh24_1_1.fq.gz
-│    │   └── eICh24_1_2.fq.gz
+│    │   ├── eICh24_1_2.fq.gz
 │    │   ├── eICh24_2_1.fq.gz
 │    │   └── eICh24_2_2.fq.gz
 │    ├── results/
