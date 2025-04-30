@@ -1,5 +1,7 @@
 # Installation Instructions
 
+For this analyses we used 2 TB of memmory SSD, 64 GB DDR4, and an Intel(R) Core(TM) i9-10900F CPU @ 2.80GHz with 10 cores processor.  
+
 ## Step 1: Prepare the setup
 All the analysis were done in the latest LTS version of Ubuntu "Ubuntu 24.04.2 LTS". For the majority of bioinformatic tools we used Anaconda3 v2024-10-1.
 
