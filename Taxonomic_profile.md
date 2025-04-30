@@ -15,9 +15,12 @@ Continue creating the folder tree.
 │    ├── bioinfo-tools.yml
 │    ├── checksums.md5
 │    ├── adapters/
+│    ├── scripts/
+│    │   ├── script.py
+│    │   └── script2.py
 │    ├── data/
 │    │   ├── eICh24_1_1.fq.gz
-│    │   └── eICh24_1_2.fq.gz
+│    │   ├── eICh24_1_2.fq.gz
 │    │   ├── eICh24_2_1.fq.gz
 │    │   └── eICh24_2_2.fq.gz
 │    ├── results/
@@ -78,7 +81,7 @@ Execute the python script to filter taxa by score scored ≤300 and had match le
 chmod +x script.py
 
 # Execute the script
-./script.py
+/home/proyect/scripts/script.py
 ```
 
 Filter the report.tsv files using the taxIDs of the previously filtered files
@@ -87,7 +90,7 @@ Filter the report.tsv files using the taxIDs of the previously filtered files
 chmod +x script2.py
 
 # Execute the script
-./script2.py
+/home/proyect/scripts/script2.py
 ```
 
 Transforms results.txt file to kreport.txt, for each sample
