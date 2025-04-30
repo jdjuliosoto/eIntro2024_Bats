@@ -1,10 +1,12 @@
 # eIntro2024 Bats
 
-Microbiome characterization of bat guano collected at Camino del Hierro, Arribes del Duero Natural Park
+Microbiome Characterization of Bat Guano from Camino del Hierro, Arribes del Duero Natural Park
+This repository contains the analysis pipeline used to characterize the microbiome composition of bat guano samples collected at Camino del Hierro , within the Arribes del Duero Natural Park.
 
-Follow the next order to repeat the results of our publication:
-1) INSTALL.md
-2) Preprocessing.md
-3) Taxonomic_profile.md
-4) Functional_profiling.md
-5) Virulence.md
+To reproduce the results presented in our publication, follow the workflow in this order:
+
+INSTALL.md – Setup environment and dependencies
+Preprocessing.md – Quality control and preprocessing of raw sequencing reads
+Taxonomic_profile.md – Taxonomic profiling using Centrifuge
+Functional_profiling.md – Functional annotation with HUMAnN
+Virulence.md – Detection of virulence factors via BLAST against VFDB
