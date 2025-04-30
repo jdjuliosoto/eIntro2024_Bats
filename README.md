@@ -5,8 +5,8 @@ This repository contains the analysis pipeline used to characterize the microbio
 
 To reproduce the results presented in our publication, follow the workflow in this order:
 
-INSTALL.md – Setup environment and dependencies
-Preprocessing.md – Quality control and preprocessing of raw sequencing reads
-Taxonomic_profile.md – Taxonomic profiling using Centrifuge
-Functional_profiling.md – Functional annotation with HUMAnN
-Virulence.md – Detection of virulence factors via BLAST against VFDB
+1) INSTALL.md – Setup environment and dependencies
+2) Preprocessing.md – Quality control and preprocessing of raw sequencing reads
+3) Taxonomic_profile.md – Taxonomic profiling using Centrifuge
+4) Functional_profiling.md – Functional annotation with HUMAnN
+5) Virulence.md – Detection of virulence factors via BLAST against VFDB
