@@ -1,6 +1,5 @@
 # Raw reads preprocessing
 
-For this step we used 2 TB of memmory SSD, 64 GB DDR4, and an Intel 9 twelve-core processor.  
 
 ## Step 1: Setup directories and organize input data
 Once installed the bioinformatic tools, downloaded and verificated all the samples put all of them in a folder called **data**. 
