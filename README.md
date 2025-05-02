@@ -1,6 +1,6 @@
 # eIntro2024 Bats
 
-Microbiome Characterization of Bat Guano from Camino del Hierro, Arribes del Duero Natural Park
+## Microbiome Characterization of Bat Guano from Camino del Hierro, Arribes del Duero Natural Park
 This repository contains the analysis pipeline used to characterize the microbiome composition of bat guano samples collected at Camino del Hierro , within the Arribes del Duero Natural Park.
 
 To reproduce the results presented in our publication, follow the workflow in this order:
