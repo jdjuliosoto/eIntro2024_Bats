@@ -7,6 +7,5 @@ To reproduce the results presented in our publication, follow the workflow in th
 
 1) INSTALL.md – Setup environment and dependencies
 2) Preprocessing.md – Quality control and preprocessing of raw sequencing reads
-3) Taxonomic_profile.md – Taxonomic profiling using Centrifuge
-4) Functional_profiling.md – Functional annotation with HUMAnN
-5) Virulence.md – Detection of virulence factors via BLAST against VFDB
+3) Tax_functional_profile.md – Taxonomic profiling using Centrifuge, Functional annotation with HUMAnN and Detection of virulence factors via BLAST against VFDB
+
