@@ -19,3 +19,7 @@ Functional analyses were done with pathabundance_cpm.tsv from Humann3
 
 1) Functional_analyses.R
 
+Virulences detection was done with the VFDB.csv from blast
+
+1) Virulence_analysis.R
+
