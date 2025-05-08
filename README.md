@@ -9,3 +9,8 @@ To reproduce the results presented in our publication, follow the workflow in th
 2) Preprocessing.md – Quality control and preprocessing of raw sequencing reads
 3) Tax_functional_profile.md – Taxonomic profiling using Centrifuge, Functional annotation with HUMAnN and Detection of virulence factors via BLAST against VFDB
 
+Abundace graphs were done with the kreports from Centrifuge
+
+1) Virus_taxa.md
+2) Bacteria_taxa.md
+
