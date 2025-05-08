@@ -15,3 +15,7 @@ Abundace graphs and diversity analyses were done with the kreports from Centrifu
 2) Bacteria_taxa.md
 3) Diversity_analyses.md
 
+Functional analyses were done with pathabundance_cpm.tsv from Humann3
+
+1) Functional_analyses.R
+
