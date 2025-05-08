@@ -1,6 +1,6 @@
 # Obtain bacteria orders plots
 
-## Prepare the data
+## Set the working space
 
 ```R
 # BiocManager libraries
