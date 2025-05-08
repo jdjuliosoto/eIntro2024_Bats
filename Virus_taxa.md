@@ -1,6 +1,6 @@
 # Obtain virus orders plots
 
-## Prepare the data
+## Set the working space
 ```R
 # libraries
 library(dplyr)
