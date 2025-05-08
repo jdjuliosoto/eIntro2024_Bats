@@ -70,7 +70,7 @@ filtered_data_1$name <-  trimws(filtered_data_1$name)
 ```R
 
 filtered_data_2 <- unique(filtered_data_1$name) # obtain unique values
-filtered_data_2[102] <- "Bacteroidetes Incertae sedis" # the name give problems, so it has to be correctly formated
+filtered_data_2[102] <- "Bacteroidetes Incertae sedis" # the name give problems, so it has to be correctly formatted
 
 # get IDs
 taxids_ori <- get_uid(filtered_data_2)
@@ -113,7 +113,7 @@ viruses_id <- superkingdoms_taxid %>%
 ```
 
 
-## Filter all the data by the ID of the domain previusly obtained
+## Filter all the data by the ID of the domain previously obtained
 ```R
 # Filter orders (genus, class, family, order) by domain (virus, bacteria)
 filtered_data <- filtered_data_1 %>%
