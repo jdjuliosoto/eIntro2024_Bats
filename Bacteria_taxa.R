@@ -24,6 +24,7 @@ library(zoo)
 library(treemap)
 library(viridis)
 library(patchwork)
+library(ggnewscale)
 
 # Set ENTREZ API Key globally
 ent_ap_key = "your_key"
@@ -66,7 +67,7 @@ combined_data <- do.call(rbind, all_data)
 
 # Filter for orders only (rank == 'O') and keep those with reads > 0
 filtered_data_1 <- combined_data %>%
-  filter(rank == "O" & reads > 0 )
+  filter(rank == "G" & reads > 0 )
 
 # trim and format the table
 filtered_data_1$name <-  trimws(filtered_data_1$name)
@@ -308,8 +309,8 @@ phylo_tree <- compute.brlen(phylo_tree, fun = function(x) log10(x))
 # Plot tree
 p <- ggtree(phylo_tree, branch.length = "branch.length") +
   theme_tree2()+
-  geom_tree(size = 1 , aes(color = branch.length)) + # branch color
-  geom_tiplab(linesize = 1, size = 8) +    
+  geom_tree(size = 0.8 , aes(color = branch.length)) + # branch color
+  geom_tiplab(linesize = 1, size = 2) +    
   theme(legend.text = element_text(size = 16),
         legend.title = element_text(size = 18),
         axis.text.x = element_text(size = 20),
@@ -318,8 +319,8 @@ p <- ggtree(phylo_tree, branch.length = "branch.length") +
   scale_x_ggtree()
 
 # Plot heatmap
-b3 <- gheatmap(p, abundance_long_filt_db, offset = 0.3, width = 0.5, 
-         font.size = 4.5, hjust = 1, colnames_angle = 90) +
+b3 <- gheatmap(p, abundance_long_filt_db, offset = 0.1, width = 0.5, 
+         font.size = 4, hjust = 1, colnames_angle = 90) +
   theme(
     legend.text = element_text(size = 18),
     legend.title = element_text(size = 18),
