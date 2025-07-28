@@ -9,6 +9,8 @@ library(ggplot2)
 library(stringr)
 library(pheatmap)
 library(tidyr)
+library(grid)
+
 
 # Set directory and read files
 rute <- ".../directory/"
@@ -72,8 +74,14 @@ rownames(matrix_heatmap) <- heatmap_data$title1
 # write the table in csv
 write.csv(matrix_heatmap, "virulence_factors.csv")
 
-# Plot heatmap
-pheatmap(matrix_heatmap,
+# TSS x sample
+matriz_normalizada <- sweep(matriz_heatmap, 2, colSums(matriz_heatmap), FUN = "/")
+
+# log10  transfromation
+matriz_normalizada_log <- log10(matriz_normalizada + 1)
+
+#Graph
+pheatmap(matriz_normalizada_log,
          scale = "row",
          color = colorRampPalette(c("blue", "white", "red"))(50),  # Colors from low to high
          clustering_distance_rows = "euclidean",  
