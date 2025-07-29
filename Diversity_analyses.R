@@ -73,7 +73,7 @@ combined_data <- do.call(rbind, all_data)
 
 # Filter for orders only (rank == 'O') and keep those with reads > 0
 filtered_data_1 <- combined_data %>%
-  filter(rank == "O" & reads > 0 )
+  filter(rank == "G" & reads > 0 )
 
 # trim and format the table
 filtered_data_1$name <-  trimws(filtered_data_1$name)
@@ -166,7 +166,7 @@ feno <-  feno %>%
 feno$date <- as.factor(feno$date) # make sure the date column is a factor
 
 # Add seasson as a factor
-vector1 <-c(rep("Hibernation", 13), rep("Breeding season", 35)) 
+vector1 <-c(rep("Hibernation", 13), rep("Breeding_season", 35)) 
 feno$date2 <- as.factor(vector1)
 feno <- feno[,-1]
 
@@ -192,7 +192,7 @@ dds <- DESeq(dds)
 # Taxa that change among seasons
 ```R
 resultsNames(dds)
-res <- results(dds, name = "date2_Breeding_season_vs_Hibernation_season", alpha = 0.05)
+res <- results(dds, name = "date2_Hibernation_vs_Breeding_season", alpha = 0.05)
 dif_spec <- res[!is.na(res$pvalue) & res$pvalue < 0.05,]
 dif_spec
 
@@ -297,7 +297,7 @@ ggplot(rarefaction_data, aes(x = Depth, y = Richness, color = Sample)) +
         axis.title = element_text(size = 20, face = "bold")) +
   labs(title = "",
        x = "Number of reads",
-       y = "Estimated richness (number of orders)") 
+       y = "Estimated richness (number of genera)") 
 
 # Save plot at 16x10
 ```
@@ -312,17 +312,17 @@ read_tss <- sweep(dat, 1, rowSums(dat), FUN = "/")
 rowSums(read_tss)  
 
 # Shannon index
-shannon_index <- diversity(t(read_tss), index = "shannon")
+shannon_index <- diversity(read_tss, index = "shannon")
 
 # Pielou's evenness index (J)
-richness <- specnumber(t(read_tss))
+richness <- specnumber(read_tss)
 pielou_evenness <- shannon_index / log(richness)
 
 # Simpson index
-simpson_index <- 1-(diversity(t(read_tss), index = "simpson"))
+simpson_index <- 1-(diversity(read_tss, index = "simpson"))
 
 # Inverse Simpson index
-inv_simpson_index <- diversity(t(read_tss), index = "invsimpson")
+inv_simpson_index <- diversity(read_tss, index = "invsimpson")
 
 # Combine results into a dataframe
 diversity_indices <- data.frame(Shannon = shannon_index,
@@ -436,7 +436,7 @@ write.csv(jaccard_matrix, "jaccard_matrix.csv", row.names = T)
 write.csv(euclidean_matrix, "euclidean_matrix.csv", row.names = T)
 
 # Visualization PCoA (Principal Coordinates Analysis)
-pcoa_res <- cmdscale(bray_dist, eig = TRUE, k = 2)
+pcoa_res <- cmdscale(bray_matrix, eig = TRUE, k = 2)
 
 # Calculate explained variance
 var_explained <- round(100 * pcoa_res$eig / sum(pcoa_res$eig), 2)
