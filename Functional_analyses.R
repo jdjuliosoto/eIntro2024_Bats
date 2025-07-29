@@ -135,7 +135,7 @@ for(i in 1:n_samples){
       output = out_dir,
       fixed_effects = c("date2"),
       normalization = "TSS",
-      transform = "LOG",
+      transform = "NONE",
       cores = 5,
       plot_heatmap = FALSE,
       heatmap_first_n = FALSE,
