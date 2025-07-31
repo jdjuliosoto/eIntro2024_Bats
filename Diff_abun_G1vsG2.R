@@ -1,5 +1,5 @@
-# Differential abundance taxa, metabolic pathways and virulence factors across two groups of samples described by PCA-GMM, Bray-Curtis PoCA, PCA of the VST abundance data and Virulence Factors.
- 
+# Differential Abundance of Taxa, Metabolic Pathways, and Virulence Factors Across Two Sample Groups Identified by Multivariate Clustering Methods"
+# Including PCA-GMM, Bray-Curtis PoCA, and PCA of VST-Transformed Abundance Data 
 
 ```R
 # CRAN libraries
