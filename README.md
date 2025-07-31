@@ -23,7 +23,7 @@ Virulences detection was done with the VFDB.csv from blast
 
 1) Virulence_analysis.R
 
-Differential Abundance of Taxa, Metabolic Pathways, and Virulence Factors Across Two Sample Groups Identified by Multivariate Clustering Methods"
+Differential Abundance of Taxa, Metabolic Pathways, and Virulence Factors Across Two Sample Groups Identified by Multivariate Clustering Methods
 Including PCA-GMM of functional abundances, Bray-Curtis PoCA, and PCA of VST-Transformed Abundance Data
 
 1) Diff_abun_G1vsG2.R
